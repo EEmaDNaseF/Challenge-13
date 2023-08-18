@@ -12,11 +12,12 @@
     width: 100%;
     margin: auto;
     padding: 20px;
+    height: 100vh;
 }
 
 .container {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     gap: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
     background-color: darkcyan;
@@ -36,7 +37,7 @@
 .container .right-side h4 {
     color: #C8C3BC;
     font-size: 20px;
-    margin-bottom: 30px;
+    margin: 40px 0;
 }
 .container .right-side .btns {
     display: flex;
@@ -109,9 +110,12 @@
 
 
 @media only screen and (max-width : 700px) {
-    
+    .login {
+        height: 100%;
+    }
     .container {
         flex-direction: column;
+        gap: 0px;
     }
     .container .left-side ,
     .container .right-side {
