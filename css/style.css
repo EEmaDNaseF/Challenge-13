@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    background-color: darkcyan;
+}
+
+.container .left-side ,
+.container .right-side {
+    width: 50%;
+}
+
+.container .left-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .right-side h4 {
+    color: #C8C3BC;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.container .right-side .btns {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 90%;
+    margin-bottom: 40px;
+}
+.container .right-side .btns .btn-1,
+.container .right-side .btns .btn-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+
+.container .right-side .contacts .label {
+    color: #A8A095;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.container .right-side .contacts .info input {
+    outline: none;
+    border: none;
+    width: 90%;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px ;
+}
+.container .right-side .contacts .label .lbl {
+    display: flex;
+    align-items: center;
+}
+.container .right-side .contacts a {
+    color: #DDDAD6;
+    font-size: 12px;
+    margin: 10px 0;
+    text-align: right;
+    display: inline-block;
+    width: 90%;
+}
+.container .right-side .center .btn-3 {
+    background-color: tan;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    border: none ;
+    outline: none;
+    width: 30%;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+.container .right-side .special p.p-1 {
+    color: #DDDAD6 ;
+    font-size: 18px;
+
+}
+.contacts .right-side .special .p-1 a {
+    color: #DDDAD6;
+    font-size: 18px;
+}
+
+
+@media only screen and (max-width : 700px) {
+    
+    .container {
+        flex-direction: column;
+    }
+    .container .left-side ,
+    .container .right-side {
+        width: 100%;
+    }
+    .container .right-side .btns {
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    .container .right-side .contacts .label { 
+        margin: auto;
+    }
+    .container .right-side .contacts .info input {
+        margin: auto;
+        display: block;
+        margin-bottom: 10px;
+    }
+    .container .right-side h4 {
+        margin-left: 30px;
+        width: 90%;
+    }
+    .container .right-side .btn-3 ,
+    .container .right-side .special p.p-1 {
+        margin-left: 20px;
+        margin-bottom: 15px;
+    }
+
+}
+
+@media only screen and (max-width : 320px) {
+    .container .right-side .contacts a {
+        text-align: center;
+        width: 100%;
+    }
+    .container .right-side .center {
+        display: flex;
+        justify-content: center;
+        
+    }
+    .container .right-side .center .btn-3 {
+        width: 60%;
+        margin-left: 0 ;
+    }
+    .container .right-side .special p.p-1 {
+        text-align: center;
+    }
+}
